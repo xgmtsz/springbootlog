@@ -1,0 +1,6 @@
+# 日志配置
+logging:
+  level:
+    com.xgmtsz: info
+    org.springframework: warn
+

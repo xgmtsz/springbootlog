@@ -1,0 +1,12 @@
+app:
+    auto-scan-package: com.xgmtsz
+
+spring:
+  profiles:
+    active: dev
+
+# 日志配置
+logging:
+  level:
+    com.xgmtsz: debug
+    org.springframework: warn
