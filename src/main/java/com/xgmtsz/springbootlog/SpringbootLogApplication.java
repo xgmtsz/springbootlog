@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class}, scanBasePackages = {"${app.auto-scan-package}"})
 @RestController
 @Slf4j
-public class DemoApplication {
+public class SpringbootLogApplication {
 
     @GetMapping("/")
     String home() {
@@ -29,7 +29,7 @@ public class DemoApplication {
     public static void main(String[] args) {
 //        printSelectedLevel();
         log.info("方法SpringApplication.run启动前。"); //启动方法之前打印不到文件里。
-        SpringApplication.run(DemoApplication.class, args);
+        SpringApplication.run(SpringbootLogApplication.class, args);
         log.info("                  ");//隔离线
         log.info("方法SpringApplication.run启动后。");
     }
